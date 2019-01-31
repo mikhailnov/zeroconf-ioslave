@@ -65,6 +65,7 @@ ZeroConfProtocol::ZeroConfProtocol(const QByteArray& protocol, const QByteArray 
     knownProtocols[QStringLiteral("_sftp-ssh._tcp")]=ProtocolData(i18n("Remote disk (sftp)"),     QStringLiteral("sftp"),   QString(),              QStringLiteral("u"), QStringLiteral("p"));
     knownProtocols[QStringLiteral("_ssh._tcp")]=     ProtocolData(i18n("Remote disk (fish)"),     QStringLiteral("fish"),   QString(),              QStringLiteral("u"), QStringLiteral("p"));
     knownProtocols[QStringLiteral("_nfs._tcp")]=     ProtocolData(i18n("NFS remote directory"),   QStringLiteral("nfs"),    QStringLiteral("path"));
+    knownProtocols[QStringLiteral("_smb._tcp")]=     ProtocolData(i18n("SMB remote directory"),   QStringLiteral("smb"),    QStringLiteral("path"));
 }
 
 ZeroConfProtocol::~ZeroConfProtocol()
